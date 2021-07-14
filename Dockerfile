@@ -1,7 +1,7 @@
-FROM odisho1997/ICSS-USERBOT:latest
+FROM Odysho/November-USERBOT:latest
 
 # نسخ رابط السورس 
-RUN git clone https://github.com/odisho1997/ICSS-USERBOT.git /root/userbot
+RUN git clone https://github.com/Odysho/November-USERBOT.git /root/userbot
 # اخـراج العـمل 
 WORKDIR /root/userbot
 
