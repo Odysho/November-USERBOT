@@ -1,12 +1,7 @@
-#   icss - UserBot
-#  kimo: 
-#     - strings for Icss - Userbot
-
-from userbot.Config import Config # Ok - 🖤 
-
+from userbot.Config import Config 
 USERID = Config.OWNER_ID
 Name = Config.ALIVE_NAME
-DEFAULTUSER = str(Name) if Name else "Icss Userbot"
+DEFAULTUSER = str(Name) if Name else "November-USERBOT"
 mention = f"[{Name}](tg://user?id={USERID})"
 
 Plugin = "userbot/plugins/{}.py"
@@ -66,7 +61,6 @@ MSGE = (
 Tlk = " تم استرداد ⫸"
 IS = "⫷ لايمكن تحميل - {} بسبب {} ⫸"
 
-#- TOSH is the most beautiful girl in the world -#
 ICSJ = "<ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ>"
 StartLoaded = "<ⵧⵧⵧⵧⵧⵧ⫷ - ɴᴏᴠᴇᴍʙᴇʀ PLUGINS - ⫸ⵧⵧⵧⵧⵧⵧ>"
 ASSISTANT = "<ⵧⵧⵧⵧⵧⵧ⫷ - ɴᴏᴠᴇᴍʙᴇ ASSISTANT - ⫸ⵧⵧⵧⵧⵧⵧ>"
