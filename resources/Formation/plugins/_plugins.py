@@ -22,7 +22,7 @@ USERID = bot.uid if Config.OWNER_ID == 0 else Config.OWNER_ID
 ALIVE_NAME = Config.ALIVE_NAME
 AUTONAME = Config.AUTONAME
 DEFAULT_BIO = Config.DEFAULT_BIO
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Icss Userbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "November Userbot"
 BOT_USERNAME = Config.TG_BOT_USERNAME
 ICSBOT = Config.TG_BOT_USERNAME
 ICSB = Config.TG_BOT_USERNAME
@@ -37,19 +37,19 @@ TOSHA_ID = bot.me.id
 
 # Dev tag
 tosh = ( 
-    "𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧˢᵃᑫᵗⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+    "𓍹ⵧⵧⵧⵧⵧⵧˢᵃᑫᵗⵧⵧⵧⵧⵧⵧ𓍻\n"
     "↬[- M𝙴𝙼𝙸𝙰𝙽 ODY 𐇰.](t.me/OORRR)༗\n"
-    "𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧˢᵃᑫᵗⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻"
+    "𓍹ⵧⵧⵧⵧⵧⵧˢᵃᑫᵗⵧⵧⵧⵧⵧⵧ𓍻\n"
 )
 
 # Repo 
 R = (
-    "⌔∮ 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝐒𝐀𝐐𝐓 - 𝙍𝙀𝙋𝙊 𓆪 \n"
-    "𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+    "⌔∮ 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝐒𝐀𝐐𝐓 - 𝙍𝙀𝙋𝙊 𓆪 \n\n"
+    "𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
     "- 𝐃𝐄𝐕 𝐒𝐎𝐔𝐑𝐂𝐄 ⪼ [- M𝙴𝙼𝙸𝙰𝙽 ODY 𐇰.](t.me/OORRR) ⩫ \n"
     "- 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⪼ [┊ɴᴏᴠᴇᴍʙᴇʀ 💞' •](T.ME/NNEEE) ⩫"
 )
-K = "https://github.com/ANL0KE/SAQT-USERBOT"
+K = "TM.E/NNEEE"
 
 # Alive Bot 
 TOSH = (
@@ -104,8 +104,6 @@ if Config.SUDO_USERS:
     for user in Config.SUDO_USERS:
         ics_users.append(user)
 
-
-# ================================================
 
 if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
     os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
