@@ -6,13 +6,12 @@ from telethon.tl.types import ChatBannedRights
 from ...utils import errors_handler
 from .. import BOTLOG, BOTLOG_CHATID, extract_time, get_user_from_event
 
-# =================== CONSTANT ===================
-NO_ADMIN = "`I am not an admin nub nibba!`"
-NO_PERM = "`I don't have sufficient permissions! This is so sed. Alexa play despacito`"
+NO_ADMIN = "**↫ عذرًا انا لست مشرفًا هنا ⁂**"
+NO_PERM = "**⏎ عذرًا ليست لدي صلاحيات لتنفيذ الامر ✘**"
 
 
-@icssbot.on(admin_cmd(pattern=r"tmute(?: |$)(.*)"))
-@icssbot.on(sudo_cmd(pattern=r"tmute(?: |$)(.*)", allow_sudo=True))
+@icssbot.on(admin_cmd(pattern=r"كتمه(?: |$)(.*)"))
+@icssbot.on(sudo_cmd(pattern=r"كتمه(?: |$)(.*)", allow_sudo=True))
 @errors_handler
 async def tmuter(kimo):
     chat = await kimo.get_chat()
@@ -22,7 +21,7 @@ async def tmuter(kimo):
     if not admin and not creator:
         await edit_or_reply(kimo, NO_ADMIN)
         return
-    icse = await edit_or_reply(kimo, "`muting....`")
+    icse = await edit_or_reply(kimo, "**⏎سيتم الكتم انتظر من فضلك ... √**")
     user, reason = await get_user_from_event(kimo, icse)
     if not user:
         return
@@ -32,7 +31,7 @@ async def tmuter(kimo):
         icst = reason[0]
         reason = reason[1] if hmm == 2 else None
     else:
-        await icse.edit("you haven't mentioned time, check `.info tadmin`")
+        await icse.edit("**⏎ لم تذكر الوقت!\n لمعرفة كيفية كتابة الامر :**`.info tadmin`")
         return
     self_user = await kimo.client.get_me()
     itime = await extract_time(kimo, icst)
@@ -113,7 +112,7 @@ async def ban(kimo):
         icst = reason[0]
         reason = reason[1] if tosh == 2 else None
     else:
-        await icse.edit("you haven't mentioned time, check `.info tadmin`")
+        await icse.edit("**⏎ لم تذكر الوقت!\n لمعرفة كيفية كتابة الامر :**`.info tadmin`")
         return
     self_user = await kimo.client.get_me()
     itime = await extract_time(kimo, icst)
@@ -141,7 +140,6 @@ async def ban(kimo):
     except BadRequestError:
         await icse.edit(NO_PERM)
         return
-    # Helps ban group join spammers more easily
     try:
         reply = await kimo.get_reply_message()
         if reply:
@@ -149,9 +147,6 @@ async def ban(kimo):
     except BadRequestError:
         await icse.edit("`I dont have message nuking rights! But still he was banned!`")
         return
-    # Delete message and then tell that the command
-    # is done gracefully
-    # Shout out the ID, so that fedadmins can fban later
     if reason:
         await icse.edit(
             f"{_format.mentionuser(user.first_name ,user.id)} was banned in {kimo.chat.title}\n"
