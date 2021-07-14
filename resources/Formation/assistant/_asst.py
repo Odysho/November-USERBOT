@@ -1,23 +1,19 @@
-#  ICSS - USERBOT
-#  TELE - @NIIIN2
-#  OWNER - KIMO
-
 import time
 from datetime import datetime
 from userbot.Config import Config
 from userbot.plugins import mention
 
-# Kimo
+# المطور
 K = "https://t.me/OORRR"
-D = "** ⌔∮ 𝐃𝐄𝐕 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝐒𝐀𝐐𝐓**"
+D = "** ⌔∮ مطور بوت نوفمبر**"
 
 OWNER_ID = Config.OWNER_ID
 ALIVE_NAME = Config.ALIVE_NAME if Config.ALIVE_NAME else "@OORRR"
 
-# for OWNER_ID
+# ايدي المطور
 OId = Config.OWNER_ID
 
-# for time
+# الوقت
 StartTime = time.time()
 
 # Users id - Chat id
@@ -41,13 +37,13 @@ startotherena = MSSG
 startowner = f"** ⌔∮ اهلا بك مجدداً {ALIVE_NAME}. اختر احد الخيارات الاتيه:**"
 
 # for alive
-Def = str(ALIVE_NAME) if ALIVE_NAME else "SAQT - User"
-asst_p = "https://telegra.ph/M%F0%9D%99%B4%F0%9D%99%BC%F0%9D%99%B8%F0%9D%99%B0%F0%9D%99%BD-ODY-06-24"
+Def = str(ALIVE_NAME) if ALIVE_NAME else "Icss - User"
+asst_p = "https://telegra.ph/file/ac1a7db2e66ab5b16da5c.jpg"
 asst_c = "➥ **ASSISTANT IS:** `ONLINE`\n"
 asst_c += f"➥ **My Boss** : {Def} \n"
 asst_c += "➥ **Heroku Database** : `AWS - Working Properly`\n"
 asst_c += "➥ **Copyright** : By [- M𝙴𝙼𝙸𝙰𝙽 ODY 𐇰.](https://t.me/OORRR)\n"
-asst_c += "[┊ɴᴏᴠᴇᴍʙᴇʀ 💞' •](https://t.me/NNEEE)"
+asst_c += "[ՏøuƦcε πøνεʍβεƦ 🌦](tm.e/nneee)"
 
 # for ping
 def get_readable_time(seconds: int) -> str:
@@ -375,7 +371,5 @@ SetMsg = [
     "⌔∮ يتم اكمال تنصيب بوتك في @BotFather",
     "⌔∮ تم تنصيب بوتك"
 ]
-SetDec = "- 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝘼𝙎𝙎𝙄𝙎𝙏𝘼𝙉𝙏 𝘽𝙊𝙏 🔱\n- 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝘽𝙊𝙏 𝙁𝙊𝙍 ~ {}\n- 𝐃𝐄𝐕 𝐒𝐎𝐔𝐑𝐂𝐄 ~ [- M𝙴𝙼𝙸𝙰𝙽 ODY 𐇰.](https://t.me/OORRR)"
-SetAbt = "- 𝙎𝙊𝙐𝙍𝘾𝙀 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 🔱\n- 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝘽𝙊𝙏 𝙁𝙊𝙍 ~ {}"
-
-# This is For Icss - Userbot only!!
+SetDec = "[ՏøuƦcε πøνεʍβεƦ 🌦](tm.e/nneee)"
+SetAbt = "𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝘽𝙊𝙏 𝙁𝙊𝙍 ~ {}"
