@@ -8,7 +8,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 HEROKU_APP_NAME = Config.HEROKU_APP_NAME or None
 HEROKU_API_KEY = Config.HEROKU_API_KEY or None
 UPSTREAM_REPO_BRANCH = Config.UPSTREAM_REPO_BRANCH
-UPSTREAM_REPO = "https://github.com/odisho1997/ICSS-USERBOT"
+UPSTREAM_REPO = "https://github.com/Odysho/November-USERBOT"
 T = Config.COMMAND_HAND_LER
 
 requirements_path = path.join(
